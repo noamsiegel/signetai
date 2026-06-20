@@ -143,6 +143,14 @@ const {
 	{:catch error}
 		{@render skeletonError(error)}
 	{/await}
+{:else if activeTab === "blackbox"}
+	{#await import("$lib/components/tabs/BlackBoxTab.svelte")}
+		{@render skeletonList()}
+	{:then module}
+		<module.default {agentId} />
+	{:catch error}
+		{@render skeletonError(error)}
+	{/await}
 {:else if activeTab === "pipeline"}
 	{#await import("$lib/components/tabs/PipelineTab.svelte")}
 		{@render skeletonList()}

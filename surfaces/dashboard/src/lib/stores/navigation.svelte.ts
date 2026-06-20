@@ -12,6 +12,7 @@ export type TabId =
 	| "settings"
 	| "memory"
 	| "timeline"
+	| "blackbox"
 	| "knowledge"
 	| "embeddings"
 	| "audit"
@@ -34,6 +35,7 @@ const VALID_TABS: ReadonlySet<string> = new Set<TabId>([
 	"home",
 	"settings",
 	"audit",
+	"blackbox",
 	"secrets",
 	"skills",
 	"sources",
@@ -80,6 +82,8 @@ const HASH_ALIASES: ReadonlyMap<string, TabId> = new Map([
 	["logs", "audit"],
 	["audit/logs", "audit"],
 	["audit/troubleshooter", "audit"],
+	["black-box", "blackbox"],
+	["flight-recorder", "blackbox"],
 	["cortex-apps", "cortex-memory"],
 	["cortex-tasks", "tasks"],
 	["cortex-troubleshooter", "audit"],
@@ -109,6 +113,8 @@ const HASH_CANONICAL: ReadonlyMap<string, string> = new Map([
 	["audit/logs", "audit/logs"],
 	["engine/logs", "audit/logs"],
 	["audit/troubleshooter", "audit"],
+	["black-box", "blackbox"],
+	["flight-recorder", "blackbox"],
 	["cortex/troubleshooter", "audit"],
 	["matt/troubleshooter", "audit"],
 	["logs", "audit/logs"],

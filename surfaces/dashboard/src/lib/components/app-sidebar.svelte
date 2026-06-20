@@ -2,6 +2,7 @@
 import type { DaemonStatus, Harness, Identity } from "$lib/api";
 import * as Sidebar from "$lib/components/ui/sidebar/index.js";
 import {
+	Activity,
 	BarChart3,
 	BookOpen,
 	Cog,
@@ -61,6 +62,7 @@ const defaultNavItems: NavItem[] = [
 	{ id: "home", focusId: "home", label: "Overview", icon: BarChart3 },
 	{ id: "cortex-memory", focusId: "memory", label: "Ontology", icon: Orbit },
 	{ id: "tasks", focusId: "tasks", label: "Tasks", icon: ListTodo },
+	{ id: "blackbox", focusId: "blackbox", label: "Black Box", icon: Activity },
 	{ id: "audit", focusId: "audit", label: "Audit", icon: ShieldAlert },
 	{ id: "secrets", focusId: "secrets", label: "Secrets", icon: ShieldCheck },
 	{ id: "skills", focusId: "skills", label: "Skills", icon: BookOpen },

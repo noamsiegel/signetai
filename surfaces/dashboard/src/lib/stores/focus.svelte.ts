@@ -13,6 +13,7 @@ export type SidebarFocusItem =
 	| "home"
 	| "memory"
 	| "tasks"
+	| "blackbox"
 	| "audit"
 	| "secrets"
 	| "skills"
@@ -28,6 +29,7 @@ export const DEFAULT_SIDEBAR_ORDER: readonly SidebarFocusItem[] = [
 	"home",
 	"memory",
 	"tasks",
+	"blackbox",
 	"audit",
 	"secrets",
 	"skills",
@@ -62,6 +64,8 @@ function tabToSidebarItem(tab: string): SidebarFocusItem {
 			return "memory";
 		case "tasks":
 			return "tasks";
+		case "blackbox":
+			return "blackbox";
 		case "audit":
 			return "audit";
 		case "home":
@@ -100,6 +104,8 @@ function sidebarItemToTab(item: SidebarFocusItem): TabId | null {
 			return "cortex-memory";
 		case "tasks":
 			return "tasks";
+		case "blackbox":
+			return "blackbox";
 		case "audit":
 			return "audit";
 		case "settings":

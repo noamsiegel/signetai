@@ -22,6 +22,10 @@ export const PAGE_HEADERS = {
 		title: "Ontology",
 		eyebrow: "Era evolution timeline",
 	},
+	blackbox: {
+		title: "Black Box",
+		eyebrow: "Session context flight recorder",
+	},
 	knowledge: {
 		title: "Ontology",
 		eyebrow: "Knowledge graph and traversal view",
