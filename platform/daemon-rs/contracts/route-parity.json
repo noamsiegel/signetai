@@ -8,8 +8,8 @@
 		"deprecated-remove-from-ts-too": "Route is intentionally unsupported and must be removed or hidden from both daemons."
 	},
 	"summary": {
-		"native-rust-replay-proven": 310,
-		"mounted-shallow": 9
+		"native-rust-replay-proven": 316,
+		"mounted-shallow": 3
 	},
 	"routes": [
 		{
@@ -137,9 +137,9 @@
 			"path": "/api/auth/api-keys",
 			"file": "platform/daemon/src/routes/auth-routes.ts",
 			"line": 173,
-			"status": "mounted-shallow",
+			"status": "native-rust-replay-proven",
 			"rustMounted": true,
-			"contractReplay": false,
+			"contractReplay": true,
 			"parityRule": false
 		},
 		{
@@ -147,9 +147,9 @@
 			"path": "/api/auth/api-keys",
 			"file": "platform/daemon/src/routes/auth-routes.ts",
 			"line": 177,
-			"status": "mounted-shallow",
+			"status": "native-rust-replay-proven",
 			"rustMounted": true,
-			"contractReplay": false,
+			"contractReplay": true,
 			"parityRule": false
 		},
 		{
@@ -157,9 +157,9 @@
 			"path": "/api/auth/api-keys/:id",
 			"file": "platform/daemon/src/routes/auth-routes.ts",
 			"line": 210,
-			"status": "mounted-shallow",
+			"status": "native-rust-replay-proven",
 			"rustMounted": true,
-			"contractReplay": false,
+			"contractReplay": true,
 			"parityRule": false
 		},
 		{
@@ -167,9 +167,9 @@
 			"path": "/api/auth/login",
 			"file": "platform/daemon/src/routes/auth-routes.ts",
 			"line": 87,
-			"status": "mounted-shallow",
+			"status": "native-rust-replay-proven",
 			"rustMounted": true,
-			"contractReplay": false,
+			"contractReplay": true,
 			"parityRule": false
 		},
 		{
@@ -177,9 +177,9 @@
 			"path": "/api/auth/methods",
 			"file": "platform/daemon/src/routes/auth-routes.ts",
 			"line": 85,
-			"status": "mounted-shallow",
+			"status": "native-rust-replay-proven",
 			"rustMounted": true,
-			"contractReplay": false,
+			"contractReplay": true,
 			"parityRule": false
 		},
 		{
@@ -187,9 +187,9 @@
 			"path": "/api/auth/saml/acs",
 			"file": "platform/daemon/src/routes/auth-routes.ts",
 			"line": 131,
-			"status": "mounted-shallow",
+			"status": "native-rust-replay-proven",
 			"rustMounted": true,
-			"contractReplay": false,
+			"contractReplay": true,
 			"parityRule": false
 		},
 		{
